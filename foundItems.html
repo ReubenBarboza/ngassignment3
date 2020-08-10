@@ -3,14 +3,14 @@
   <h4>
 		<li ng-repeat="item in found" style="padding-bottom:20px;
       		font-family: Lucida Console, Courier, monospace; font-size:20px;" class="ng-binding ng-scope">
-        	Dish:{{item.name} <br>
+      		
+        	"Dish:{{item.name} "<br>
         <button class="btn btn-info;" style="border-radius: 12px;
         background-color:orange; float:right;" ng-click="onRemove({index: $index});">Don't want this one!</button>
-        	Code:{{item.short_name}}<br>
-        	Description:{{item.description}}<br>
-
+        	"Code:{{item.short_name}}"<br>
+        	"Description:{{item.description}}"<br>
    		 </li>
   </h4>
 </ol>
-<!-- ngIf: isEmpty --><p class="alert alert-info ng-scope" ng-if="isEmpty">Nothing found</p><!-- end ngIf: isEmpty -->
+<p class="alert alert-info ng-scope" ng-if="isEmpty">Nothing found</p>
 </div>
