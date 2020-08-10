@@ -3,11 +3,11 @@
   <h4>
 		<li ng-repeat="item in found" style="padding-bottom:20px;
       		font-family: Lucida Console, Courier, monospace; font-size:20px;" class="ng-binding ng-scope">
-        	Dish:{{item.found.name}} <br>
+        	Dish:{{item.name} <br>
         <button class="btn btn-info;" style="border-radius: 12px;
         background-color:orange; float:right;" ng-click="onRemove({index: $index});">Don't want this one!</button>
-        	Code:{{item.found.short_name}}<br>
-        	Description:{{item.found.description}}<br>
+        	Code:{{item.short_name}}<br>
+        	Description:{{item.description}}<br>
 
    		 </li>
   </h4>
